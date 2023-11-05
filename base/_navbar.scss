@@ -1,0 +1,84 @@
+// @import "./variables";
+// @import "./general";
+
+// nav {
+//   // background: red;
+//   width: 100vw;
+//   height: 5rem;
+//   position: fixed;
+//   z-index: 10;
+//   display: grid;
+//   place-items: center;
+//   box-shadow: 0rem 1rem 1rem rgba($black-color, 0.1);
+//   @include lineargradient_background;
+
+//   .container {
+//     // border: 5px solid black;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     ul {
+//       display: flex;
+//       gap: 3rem;
+//       align-items: center;
+//     }
+//     /* ***********It is only needed in small and mdedium devices******** */
+//     button {
+//       display: none;
+//     }
+//     a {
+//       font-weight: 500;
+//       font-size: 1rem;
+//     }
+//     .navbar_logo h3 {
+//       color: $white-color;
+//     }
+//   }
+// }
+
+// /* *********************************** MEDIA QUERIES (MEDIUM DEVICES)**************** */
+// @media screen and (max-width: 1024px) {
+//   nav {
+//     // background: red;
+//     .container {
+//       button {
+//         display: inline-block;
+//         background: transparent;
+//         color: $white-color;
+//         font-size: 2rem;
+//       }
+//       &#navbar_close_btn {
+//         display: none;
+//       }
+//       ul {
+//         position: fixed;
+//         right: 5%;
+//         top: 5rem;
+//         flex-direction: column;
+//         align-items: flex-start;
+//         gap: 0;
+//         display: none;
+//       }
+//       li {
+//         cursor: pointer;
+//         width: 100%;
+//       }
+//       a {
+//         display: block;
+//         color: $white-color;
+//         height: 100%;
+//         border-radius: 0;
+//         padding: 1.5rem 2rem;
+//         background: linear-gradient(
+//           $primary-color-sub,
+//           darken($primary-color-sub, 12%)
+//         );
+
+//         &.btn {
+//           background: $secondary-color;
+//         }
+//       }
+//     }
+//   }
+// }

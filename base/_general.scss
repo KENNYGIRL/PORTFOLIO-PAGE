@@ -1,0 +1,181 @@
+@import "./variables";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Circular Std", sans-serif;
+  background: $portfolio-backgroundcolor;
+  user-select: none;
+  color: $font-color;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container-portfolio {
+  width: calc(90% - 15px);
+  max-width: 1240px;
+  margin-inline: auto;
+}
+
+/* ***************PORTFOLIO LAYER 1******************* */
+
+#portfolio-layer1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 21.7px;
+  margin-left: 36px;
+  margin-right: 36px;
+
+  & > img {
+    width: 100rem;
+    border: 1px;
+  }
+
+  & > p {
+    padding-left: 14px;
+    font-weight: 450px;
+    font-size: 20px;
+    line-height: 25.3px;
+  }
+}
+/* ***************PORTFOLIO LAYER 2******************* */
+#portfolio-layer2 {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  position: relative;
+}
+
+.portfolio-text {
+  & > h1 {
+    font-weight: 450px;
+    font-size: 128px;
+    line-height: 161.92px;
+    margin-right: 100px;
+    margin-top: 0.6em;
+  }
+
+  & > p {
+    margin-left: 10px;
+  }
+}
+
+.ellipse {
+  position: absolute;
+  right: 6em;
+  height: 20em;
+  z-index: -1;
+  margin-top: 1em;
+}
+
+.arrow {
+  margin-top: 10em;
+  margin-left: 5em;
+}
+
+/* ***************PORTFOLIO LAYER 3******************* */
+
+#portfolio-layer3 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 36px;
+  margin-right: 36px;
+
+  & > img {
+    width: 60rem;
+    border: 1px;
+  }
+
+  & > p {
+    font-weight: 450px;
+    font-size: 20px;
+    line-height: 25.3px;
+    width: 10em;
+  }
+}
+
+/* *********************************** MEDIA QUERIES (SMALL DEVICES)**************** */
+@media screen and (max-width: 600px) {
+  .container-portfolio {
+    width: $container-md;
+  }
+
+  #portfolio-layer1 {
+    & > img {
+      width: 24rem;
+    }
+  }
+
+  .portfolio-text {
+    & > h1 {
+      font-size: 60px;
+      margin-left: -4em;
+      margin-top: 0.8em;
+    }
+
+    & > p {
+      margin-left: -15em;
+      padding-bottom: 4em;
+    }
+  }
+
+  .ellipse {
+    left: 17em;
+    height: 15em;
+    width: 10em;
+  }
+
+  .arrow {
+    margin-top: 5em;
+    margin-left: -4em;
+  }
+}
+
+#portfolio-layer3 {
+  & > img {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container-portfolio {
+    width: $container-sd;
+  }
+
+  #portfolio-layer1 {
+    & > img {
+      width: 15rem;
+    }
+  }
+
+  .portfolio-text {
+    & > h1 {
+      font-size: 50px;
+      margin-left: -5em;
+    }
+  }
+
+  .ellipse {
+    left: 12.7em;
+    width: 7em;
+  }
+
+  .arrow {
+    margin-left: -7em;
+  }
+}
+
+#portfolio-layer3 {
+  margin-top: 5em;
+  & > img {
+    width: 8rem;
+  }
+}
